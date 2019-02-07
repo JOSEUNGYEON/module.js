@@ -99,7 +99,7 @@ ex >
 	<div class = 'example'>
 
 		<select  class="selectLang">
-    
+
               <option value="kr" selected="selected">국어 </option>
               <option value="en">영어</option>
     </select>
@@ -117,6 +117,18 @@ ex >
 	</div>                              이렇게 되있을경우   >>  example이라는 배열이 생성 된거지  example[0] example[1]   길이가 2인 배열 
 	
 이제 스크립트로 저기를 접근해볼꺼야.
+
+<script>
+ //제이쿼리 버전 
+$('.selectVisual').change(function(){   << 위에서 설명한 내장함수(이미 정의되있는 함수) change()  : 말그대로 변화가 감지되면 즉 ,셀렉트 박스에서 어떤값이 선택되면 실행 
+    console.log(this);    <<this 를 찍었을떄 어떤값이 나올까요 
+    
+)};
+
+
+
+ //스크립트 버전 
+</script>
 
 
 
