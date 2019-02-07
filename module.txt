@@ -1,0 +1,21 @@
+//팝업 스크립트 
+<script>
+	$(document).ready(function(){
+		console.log('ready');
+		var pop_length = $('.pop_ck').length ;
+			//console.log( pop_length);
+
+	for(var i =0; i < pop_length ; i++){
+
+		var key = $('.pop_ck')[i].value;
+
+		console.log(key);
+
+	 if( get_cookie('it_ck_pop_'+ key ) != 'done' ) {
+		var tmpid = document.getElementById('pop'+key);
+		$(tmpid).css('display','block');
+	
+	 };
+	}
+}
+</script>
