@@ -87,5 +87,24 @@ function getBrowserType(){
     if (agt.indexOf("mozilla/5.0") != -1) return 'Mozilla';
 }
 
+//개념 설명   소현이 누나
+예시로 설명해줄게 . 
+
+기본적으로 메소드(함수) 호출은   - > 함수명()  ex) index(); , slide();
+       value를 얻을떈    - > value , index 
+	   
+ 누나가 흔히 쓰는 태그들 div li   class 명이나 name을 같은 명칭으로 지정하면  배열로 인식돼
+ 
+ex >  
+	<div class = 'example'>
+		div 영역1
+	</div>
+	
+	<div class = 'example'>
+		div 영역2
+	</div>                              이렇게 되있을경우   >>  example이라는 배열이 생성 된거지  example[0] example[1]   길이가 2인 배열 
+	
+이제 스크립트로 저기를 접근해볼꺼야.
+
 
 
