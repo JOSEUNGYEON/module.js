@@ -1,6 +1,7 @@
 
------------------------------팝업스크립트
-<script>
+//팝업스크립트
+
+
 	$(document).ready(function(){
 		console.log('ready');
 		var pop_length = $('.pop_ck').length ;
@@ -19,9 +20,10 @@
 	 };
 	}
 }
-</script>
 
------------------------------일정 글자수 ... 처리 함수
+
+
+//일정 글자수 ... 처리 함수
 
 function CheckMaxString(obj, maxNum){               
           var li_str_len = obj.length;
@@ -48,12 +50,12 @@ function CheckMaxString(obj, maxNum){
           return ls_str2;
 }
 
------------------------------숫자에 콤마표시
+//숫자에 콤마표시
 function addCommas(num){
           return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');
 }
 
------------------------------사용자 브라우저 판별
+//사용자 브라우저 판별
 function getBrowserType(){     
 
 
@@ -86,6 +88,10 @@ function getBrowserType(){
     if (agt.indexOf("netscape") != -1) return 'Netscape';
     if (agt.indexOf("mozilla/5.0") != -1) return 'Mozilla';
 }
+
+
+
+
 
 //개념 설명   소현이 누나
 예시로 설명해줄게 . 
@@ -130,7 +136,7 @@ $('.selectVisual').change(function(){   << 위에서 설명한 내장함수(이�
 )};
 
  //스크립트 버전 
-
+var selectname = document.getElementsByClassName(selectVisual);   << DOM이뭐냐 ! 이거다 !   DOM 안에 div 태그도 있고  p태그도있고  이것들을  DOM 객체라고합니다.
 </script>
 
 
